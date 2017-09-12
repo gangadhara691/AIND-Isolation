@@ -1,0 +1,264 @@
+%PDF-1.3
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Outlines /Count 0 >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+11 0 R
+]
+/Count 2
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 8 0 R
+/F2 9 0 R
+/F3 10 0 R
+>>
+/XObject << 
+/I1 13 0 R
+/I2 14 0 R
+>>
+>>
+/MediaBox [0.000 0.000 595.280 841.890]
+ >>
+endobj
+4 0 obj
+[/PDF /Text /ImageC ]
+endobj
+5 0 obj
+<<
+/Creator (DOMPDF)
+/CreationDate (D:20170912155812+00'00')
+/ModDate (D:20170912155812+00'00')
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 5212 >>
+stream
+
+0.000 0.000 0.000 rg
+BT 34.016 768.985 Td /F1 24.0 Tf  [(Custom Score fuctions implented are:)] TJ ET
+BT 34.016 737.242 Td /F3 12.0 Tf  [(def custom_score\(game, player\):)] TJ ET
+BT 34.016 724.792 Td /F3 12.0 Tf  [(    """Calculate the heuristic value of a game state from the point of view)] TJ ET
+BT 34.016 712.342 Td /F3 12.0 Tf  [(    of the given player.)] TJ ET
+BT 34.016 699.891 Td /F3 12.0 Tf  [(    This should be the best heuristic function for your project submission.)] TJ ET
+BT 34.016 687.441 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
+BT 34.016 674.991 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
+BT 34.016 662.541 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
+BT 34.016 650.090 Td /F3 12.0 Tf  [(    ----------)] TJ ET
+BT 34.016 637.640 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
+BT 34.016 625.190 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
+BT 34.016 612.740 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
+BT 34.016 600.289 Td /F3 12.0 Tf  [(    player : object)] TJ ET
+BT 34.016 587.839 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
+BT 34.016 575.389 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
+BT 34.016 562.939 Td /F3 12.0 Tf  [(    Returns)] TJ ET
+BT 34.016 550.488 Td /F3 12.0 Tf  [(    -------)] TJ ET
+BT 34.016 538.038 Td /F3 12.0 Tf  [(    float)] TJ ET
+BT 34.016 525.588 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
+BT 34.016 513.138 Td /F3 12.0 Tf  [(    """)] TJ ET
+BT 34.016 500.687 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
+BT 34.016 488.237 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
+BT 34.016 475.787 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
+BT 34.016 463.337 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
+BT 34.016 450.887 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
+BT 34.016 438.436 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
+BT 34.016 425.986 Td /F3 12.0 Tf  [(    return float\(moves_player/2-2*moves_rival\))] TJ ET
+BT 34.016 413.536 Td /F3 12.0 Tf  [(def custom_score_2\(game, player\):)] TJ ET
+BT 34.016 401.086 Td /F3 12.0 Tf  [(    """Calculate the heuristic value of a game state from the point of view)] TJ ET
+BT 34.016 388.635 Td /F3 12.0 Tf  [(    of the given player.)] TJ ET
+BT 34.016 376.185 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
+BT 34.016 363.735 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
+BT 34.016 351.285 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
+BT 34.016 338.834 Td /F3 12.0 Tf  [(    ----------)] TJ ET
+BT 34.016 326.384 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
+BT 34.016 313.934 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
+BT 34.016 301.484 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
+BT 34.016 289.033 Td /F3 12.0 Tf  [(    player : object)] TJ ET
+BT 34.016 276.583 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
+BT 34.016 264.133 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
+BT 34.016 251.683 Td /F3 12.0 Tf  [(    Returns)] TJ ET
+BT 34.016 239.232 Td /F3 12.0 Tf  [(    -------)] TJ ET
+BT 34.016 226.782 Td /F3 12.0 Tf  [(    float)] TJ ET
+BT 34.016 214.332 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
+BT 34.016 201.882 Td /F3 12.0 Tf  [(    """)] TJ ET
+BT 34.016 189.431 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
+BT 34.016 176.981 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
+BT 34.016 164.531 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
+BT 34.016 152.081 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
+BT 34.016 139.631 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
+BT 34.016 127.180 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
+BT 34.016 114.730 Td /F3 12.0 Tf  [(    return float\(-\(moves_rival\)**2\))] TJ ET
+BT 34.016 102.280 Td /F3 12.0 Tf  [(def custom_score_3\(game, player\):)] TJ ET
+BT 34.016 89.830 Td /F3 12.0 Tf  [(    """Calculate the heuristic value of a game state from the point of view)] TJ ET
+BT 34.016 77.379 Td /F3 12.0 Tf  [(    of the given player.)] TJ ET
+BT 34.016 64.929 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
+BT 34.016 52.479 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
+BT 34.016 40.029 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
+BT 34.016 27.578 Td /F3 12.0 Tf  [(    ----------)] TJ ET
+endstream
+endobj
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+>>
+endobj
+10 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+>>
+endobj
+11 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 2681 >>
+stream
+
+0.000 0.000 0.000 rg
+BT 34.016 797.914 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
+BT 34.016 760.563 Td /F3 12.0 Tf  [(    player : object)] TJ ET
+BT 34.016 748.113 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
+BT 34.016 735.663 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
+BT 34.016 723.213 Td /F3 12.0 Tf  [(    Returns)] TJ ET
+BT 34.016 710.762 Td /F3 12.0 Tf  [(    -------)] TJ ET
+BT 34.016 698.312 Td /F3 12.0 Tf  [(    float)] TJ ET
+BT 34.016 685.862 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
+BT 34.016 673.412 Td /F3 12.0 Tf  [(    """)] TJ ET
+BT 34.016 660.961 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
+BT 34.016 648.511 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
+BT 34.016 636.061 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
+BT 34.016 623.611 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
+BT 34.016 611.160 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
+BT 34.016 598.710 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
+BT 34.016 586.260 Td /F3 12.0 Tf  [(    return float\(moves_player-2*moves_rival\))] TJ ET
+BT 64.016 548.365 Td /F2 12.0 Tf  [(custom score and custom score3 are similar to improved score. Where custom score3 is trying to )] TJ ET
+BT 64.016 534.109 Td /F2 12.0 Tf  [(increase moves of given player and reduce 2 fold moves of rival , but in custom score we are )] TJ ET
+BT 64.016 519.853 Td /F2 12.0 Tf  [(increasing moves of given player by 2 fold and reduce rivals moves by 2 fold.)] TJ ET
+BT 64.016 493.597 Td /F2 12.0 Tf  [(In custom score2 we are trying to decrease rivals moves exponentially)] TJ ET
+q
+450.750 0 0 267.750 34.016 198.996 cm /I2 Do
+Q
+BT 34.016 175.591 Td /F2 12.0 Tf  [(The win rate from the tournament results are: AB custom > AB custom2> AB improved > AB custom3)] TJ ET
+BT 34.016 149.335 Td /F2 12.0 Tf  [(I choose AB custom because:)] TJ ET
+BT 64.016 111.079 Td /F2 12.0 Tf  [(It has got the highest winning rate of 70% The winning factor for AB custom is dependent on )] TJ ET
+BT 64.016 96.823 Td /F2 12.0 Tf  [(increase of ones moves and decrease of the rivasl moves, by 2 fold helped to get 70% of win )] TJ ET
+BT 64.016 82.567 Td /F2 12.0 Tf  [(rate.)] TJ ET
+endstream
+endobj
+13 0 obj
+<<
+/Type /XObject
+/Subtype /Image
+/Width 601
+/Height 357
+/Filter /FlateDecode
+/DecodeParms << /Predictor 15 /Colors 1 /Columns 601 /BitsPerComponent 8>>
+/ColorSpace /DeviceGray
+/BitsPerComponent 8
+/Length 920>>
+stream
+xœíÒA	 0ÀÀú7½ªƒr§ ÌƒÂüà(gÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑpgÑX[¯Ñ
+endstream
+endobj
+14 0 obj
+<<
+/Type /XObject
+/Subtype /Image
+/Width 601
+/Height 357
+/SMask 13 0 R
+/Filter /FlateDecode
+/DecodeParms << /Predictor 15 /Colors 1 /Columns 601 /BitsPerComponent 8>>
+/ColorSpace  [ /Indexed /DeviceRGB 55 15 0 R ]
+/BitsPerComponent 8
+/Length 8030>>
+stream
+xœí	›Û6’†Ù-›­¶ÜìNÏØ'»“=’ìlæØÿÿÏ–8
+w‘	Aô½Ï“ÈM(EğúTÕu        €âî~gşõæm^É¼ı5ıÃÃ~E1ku7¿“Ïã»‡‡Ã“‹ê[Ñ®:Ì÷Êyä‡çááıS9Ï–Î^Ÿîé\yõ}ş>¿”ó°¾µíZ<^[™ïâ¥«.w¬]ªg=~óšY"¯¾k÷¬ =ëO÷ãÒeWÍ»ûq-sFÉü}|'şĞ«Oµÿİı·/¢|/–@oİÆƒáñ»±nù¿ñïrNzUn¬ó(µİ–WåÂvĞ÷¦½´Ÿi¦j‡ÙNí$Oõ	ûzûñÏ÷ß¾¼7í²åu?ƒúMùÀ³æÚEõ™şê~™şêzm{˜qÚÛY9Şî¼{ã°íY¢›{Ó‚ÈÃéï£6×í—-§‹ò²Åş10ìåw÷ÂÇïû±gƒ
+¿§f».¯ËÅG­º½´ŸÆ´Ã”WíT#øáÕ¶Cm?>ì†÷¡íßİ‹ÃcoûÕ¯ÊS}KÛEõÙşîƒrª^ÓfÜÃöGvÖ·ù^•3ã°{6<Útı±§¿©!¢ÕÏÏËË¿}Ï’›Äá-[«ì˜è©Ù®ÊÛrA;Ü³Î¸¿ÙOCípívÎNòÿâo½}¬¢ßËáTöM{t7ÂúMù©³a¢]TŸYê—ú‚êõÚ“÷°ı¡µãMßSıŞ~kI{Vt3ÑëE{ç´Ãş‹ó¬G}‡Ğ=z•­–=5ÛõHS¹¨şÚıÔ³İ´SÿQai}îÌLjûT/õ3¬ß”Ÿñ¬d»¼q¦~©rToäYÁ¸‡íí¬oúê?¥g‰mşj(ş6Ny–ìJbÍRfvÇ½^mÇİî¬YÉv$Ö¯ªf{àYö˜÷=‹ì{í	ÚÑu™k–×®`Í2ıšY³‚qÛÚY;Ş]Å5Ëû—ı›Vç”gÉó}<„ ıûÏOê^ıùÅ±3~ÿønœ	³]—w¯¼v¨ïíY+ôşx–ÑÁ^çĞL’ıèlÕ¯ËG5İ.·>Ñ_Û6*§êMy–;îaû#;kÇÛ½ÎœqØ‚çYòVDŞã<÷\fQÕ÷†{»ö77NoÍúyÉx‹óşû/ÆX•?üğå-m7åu¹°ô½µO™Ó÷<¾gÃ©ïƒ³¡i—s¶¢{1·?T>ò¬év™útm¿tu½¡gEã´?²³r¼Í÷ºş"U„Kyö|)í ¥¸”½”v€R\ÊŒ^J;6"ÎIá#g    \uKkUëÊÍ^/™Gó'P-YTğª€kéëÀEõyO*éïºyİÒVıWnZ½±`Äú25§"Y\¿Î³¶©XÖ{Ö2µÒ–ñÓ-J¿SÊ³NÛ®Ä³–Úİ>.ôÖƒÁûú¤åú­Rswæï@¿Õ…º¤°¼ÆÓ9™zw£GÒšŒ ş”^)l—|ÆœÖ“…ú©tû]áZ¨RûEíOõKŠa=š+ëˆú;º,Ò{Q}~{¼ñpD÷'ÒÁ¹z¯„nËÓ{-[ÄŒn‰<+Ğ'-ÕïŞÇhƒB]Ş?Ğ%EåíÀîº£èâ.~O¦ŞÑ¿şP¯¶Ëè—¨ı~;bıT\¿/Eû©ôaF§ÅõË´SÛö‹úkÆAë²Œ^Ëèê¼öxãá¯YzïP§ëÑmEã;A¸fùú¤¬wáTŞ¨ÕRŠ3_—–§ZUNç•sdg1º¨ ]ô½£­d<Ë, FÀéŸßnOMë ü~Ùv:öİñŒû«Û¥õf¡Ş+Õ_	ÏŠul]8.úÜ êL/CÚ³ìù{¡~‡ô>tLsº @—•×Ï2Û{z¡Jz¤¤g…z¥°]î/J¦<ËŞìùí×¬T?]Ï¢ïÅ§<Kú1#éóûõ—¾7÷-¡ŞËo1»éØİé½¢ñ€ó¬¼5Ëè}’u§uAjßÔYè<¶İí¢œ£Gâ×¬T½º]ôı¼g]XàY¡´ ÑOgMäúåè¨A=Nİ{§½ï,Ò{¹ûyÕóêØ8İé½ÂñB/mZ·Ÿ–éwHï3º¶÷w—ğ,W—–·#¤tVŞvºnğz¯)]¢^j}ï¬MştFú©Às?ù'‚d?«¦áúeÛ©ì‡û…ı5ß›^“^+=®gRèàúÀN0ï¤÷Zz%ĞetC>i©~‡ô>½Ş/Ğyú/W—–73 ×·7o}İ–÷Éè¢Âv™òÔş ~*ªŸê	êujf®_Ş?öéş;ıµı0ùàı(j=¿ùñ_¯k7Ô±qº-z®éÎj!oLKÿh´ ¥Ú5WO#Z‹DŞ«_‹]¥Ú5W<ëdô‹oêRª]3õÀ³    à‘õëŸyUÅã—Äw_§/rè‘w*Î“÷Ö£h¬ØÎLıs×Q‹¯³J÷ã”ã²²¥îÉõD¾®r4„ôş3;®}Ï/ô:Ä<îq¿6ü0AÚ¡ú}¼·BIr£ÍôÃÄÂIÛáë[J•èJe±HM–Ÿâ9¬öÅ9=ÕBÏ2»ÿôõIÍd%`ıMÃLœ±µñ³˜~ôâôçÄ:_Ê#NïY¤ßqt@o¬~)ú{V¯d^„ÏÒÏ‚WNN|*Gßd?ö¤AãTô=“}ìY‡Ê¶[ë´¾,Ö1v‚z¹øXQü¬(¾£kbúAcC½Øl¼-ÛÜeº´ >Y¤O[®ÇŠ°·ïÛœÿÂ8TkZ¯°¤gé¼£ÄÄáòõMæÓmOj-+>ê·LÁ:¡<KÇ¡2ıĞú#«/ôFœ ^6>V?+ŒoÅéš˜~ĞñëÅfâmKuiÁ"²—¡Ç
+ĞúÒİxú%GGFaõJHÂõ,ïİ¯ëfÇØ³¼ö¤f\k­¯±”g™3;/Ş”ÊÕ±v‚zy˜‹&ŒoÅêš˜~ĞU)§k›Š]ãë¬.-ˆOÚËÑchı]¡zWªˆó¬hÍ
+„]®g¹gvôMôiÚë‹lùA¿‘õå
+Œgíi°Uá@oÄÙ	ëeu`‘gím÷œq]ÚÈ³ÇÛêüqÕ¥ù7ã¡½=V€ÖïĞE§_râPñ¬©5K¿gK-m¡¾©s×,*ßÇ3®z¬Iÿ˜Š=Kj&÷¶>AÎÓqvÂz9çYá¸.íGtÕùº¶¹5+G—æŞ9„örôX¤ßœó*YpÎ±œg…z¥ÔuÖó‹«5£İôjÆwr¯³ô—²)òºiÁšåÄ;µñ¯|½Qlçù%xLâÇ‹®=‚øYa|+æZ…íÇ ï×ÄÛrÆu‘.Í=äC{ë®±¤ß±Â"Ogê™fõJFIè<ÏR‡_àşZÿ•Ò7¹º¡@_d@Mó{e=K7FÏÄ¿
+ôF‘ÏŠ.ğ‚øYa|+F×Äöce¼-ÃB]Zd7´W\µô¹LB¯Ä=()ôûÀ<n]{pyz¹¥3’Ğ+1ı˜}nİ³.O/—ñş+ºuXõŞpl¼©+ó¬òq³.U/    Ÿä[–K‹å«|jµgåã–ùó£ëŸ(ôGª¨â%¡£š ıöãÂ¢ûøñ¡8»ùUZur‚¸eâŸÉ³bÏUx–_ÿåzÖ	â–yó³à5rY]^Lô~OoÃtaq£zz[Ä‡Šö‹¶Ÿ+áÆ¸eaşÉHg§=‹/–«U$¯¡iR¨IP–”¾‡Ãtaq£TÓ†­!ĞKùİµÛÏ”‡Ğæ[$ÏÊŒ[¾ÑtvNşÅHOÇèÑüıJö,9J“q˜â7ÔgŒõøåm¯^?‡µÚÈéu†<„›ã–º*škÇKÆãâjÅãµ´gÍÅaº°¸QÏŸşíßÿúËW'®Ö2Ï:WÂíqËü›ršk'íYz´Sz–s5‡éÒâF=úá?>ÿç''`ÆšåÙë?EÂqË\]Íµ3±f9û;:¡g‘J0‡éÒâFİ}ı¯İñ¿¿8:¯@/e+÷·Ÿ+a‰¸eÎõĞ]¨³c<kB÷VÚ³b•b&ÓÅÅ>¼Š##ŒÔ…ä!Ü·,¥«òtvfMôtŒ-Úïb¸€gÚ IàYà4Ü¨g!!     ¸ZªÄc7<xù­îhk@µİÆ©7FĞè6ç	$½ÖáL¿gFFª Õš}ÓZ$O ØÉS†€"ÈGHU$O ğ,¡ÉJıf´NĞ[³Vå	ÔÚÑ×ö·HĞ¨CVç	TÑŒk¼|ÿõÕn7CĞxÖê<äYTœ”ğ¬#3¾ÒÒxLöª×ï7Jf|¥¥ñ˜¬?MÿÍ2_)Ö-ŒÇDÕ?à                            8ô»6>Áe1ì;ñ#ìkÿÇ 3›^û'¸4túÀ«ÿÆpĞg•+ÿ—Ç¹¯¼q              p:z.éóİı–P½ˆ }«Èøô*/“_jÚ³_Df*7ôo"g¸ATNéZ«2—=şöåíİ×ßàY @å’qìµg©|&ÿ¢>KR^F›ÇQñøå÷§ÇÿùúDål>ÇãƒXİİÿé^E3×y!eyx[ûD¥ó5:ù{åY:_#åPÓ<~ùñğ³ÈûHyiÍ:ª3¤Êç¸7y‘ÓñVPgCy%eç\ä²ùµgí¼<v×¿ıï_Ñ§<77šş r&/d·“ Jùåk´ù=Ï
+×¬ã~ô!ñ%•Ó.E×WTÎæ…doBAS8WØÚƒfíÑbáÀ³‚TiòßÃÎ-×Q=]°f›p­ö	=‹ò5Úü‹¾g™<n¡Ñ›l9©JŸõÜµ.(šÆµü|´²Ğvã!}ÈJ{–[N}ßë{C]Îä}Ô'Mp³¤ŸD-Íã G:ÿâÒ< ¤aó/.Ìã    Ğ0çşÕ<~}ß&ç{…øYÍrî¸WˆŸÕ*ç{…øYrî¸WˆŸÕ.ç¾òÆ<                                     Ü7‘ëˆ0ÛåÉÏß×ï&½MD_•zfX>ãñIÉå:ÄàÇqÏbÒ³{:WXÌÒ~œ¨şç&ÆMa;SÌÚËÎß7ìî¾ò±‡eüşt@ì–ÎHÿÓ×'Õ® Iî”Z&=‹±'ÆŸ‘ÛŒÂõ;&èxù~L‡Í_¿Oq”ßóŞzëÕØ|Êèå¿3ë|€ô·µ;ÃX·æô¢¡8şùşáÛ—÷OÆNPª´}“×òÊƒoÂ³{4ª~‹í‡¶Gí©Y¿›‘ê¤ı˜t¾ÅùûL¿>‰dk”MD•YİèóĞ©O›GPååÒ/=ÖGãj vázª<ëa7¼ÿ‹ğlew¢7oGO²öÕ§ÉG(ş›Z³{46«
+‘“ñi´Cí©Yr-9)?X¿Ï6ûÓ«ÎŞ–d05–{şøDŸ²ô·“ĞÖ¿Ğ³Æ‹²Nv9cú ºĞïÇá »Ò‹ûÊ»vÙ—ŸSÅØ;~g„..U?Èµ§fıCª;ÅíÌEÃ\š¿Ï©ïaê½g<ë¨.wa>À\ÏR™0u&%ÿzñ,5Œd_ãh‘}9rÅÙ‹fÄä5Tı {su‚úûÔ¹÷$ı¦®^–æï3Æk*ÉšÜu\U–]½&ŸÉ5Ë«™g)Ğ¹Sıå8ö,™#U5Ö¬Y"¨ñ^ÿ“¶OÜqpö¢ë“²å­YåëO:Öiú1}ç³4ŸSÛTxMùcĞ=tv7ÊsJÛ|€Î±²è†ò¨R>-Z³œ¼Îd_KŸå„İ~œ¸‚gíúj¬GİÏÓ`ªÈŞœg¯ÿ˜¾[8E?¦3„.Îßgš¸Ÿ^]Äó›îÏ×Ív÷ÄÉ+hìN#mKÏI?Ï²¥íÒ«í‹ÂúCí0Ìo~ä=‹µ§ÇG”ÿğÃ—·ö{İmoÎ³J×/6§®VJÛ‘û%€¯wvFû 5àYà4Tò,µø'N£'²ËÚ;sı¹åjÙ  pnjå[£µ™hÍÎ…¢©M½Fˆ}^<ıìvÖÙ¹^ÔØœ~„`çF=ëë¾ì.É"Ík¨C‚¢v®—ã^Œ€ĞTº/Kr„Œ>+Ğ!ÁNY;×ËñÍ/¿y;ìB…³Kr„¬NË×!ÁNY;×ËñÍÿü4ìBİ—³Kr„ŒN+Ğ!ÁNY;×Ëã7ÿØúiU]¦½Î×!ÁNY;×Ëãw¿¾>üí)Ò}Yøë’ó::$Ø)kçz*Eyõê¾,Á)M¥§suH°SÔNÓ´öÌº5;×Kk3Ñšë¥µ™hÍ  €´vöhÍÎ)˜üd1Z›‰fìÜİ¯
+ƒeJO„x)éYâ9KúÇ›Ó#ÄÆ™
+¡q¸şÌÌ[îLvŒ9îqÔŒm~Ñ‰ßÚşs›gøßĞô,ó>fz„Ø8S4òyu²?3vØrç±£Qó“¬qÚÎF¿-ÿëõ¸Õ³ÔŒqÜ,z˜»$¾Ô2.A:ÜÎìª>"Æì£ÇAÅ®I‡<›ªe¢ÜYì‘R&ílõÉfÏR‘*wúxrâfm«ÙøRsôïŸ¤Ä7s~3³Î ÇAüïñİCªÀ¤‰rç²c­;"ÏîYRz¨k²o>)^ÕâøRóÍ|`ÆsÖ³’q¦äŒ¿ùãsLÏ8_î\v$â¨b®˜.Ş³*Ü‹ËeâféUxi|©Y†¯Ï/+®K:&PŒšq3Æùrç²£çåı÷×¹fÆÆï:ŠËåyV_nÍ²qG#fFh©céÇ»İ*;åÎeÇ±¸êˆ¼ Ï§ŠËEEñª–Æ—šC^c¥[:w³ttÏÆÄ¸›½g›WİN`0ÓÎvÏ¦£FÎ!EH:.—ÑQ¼ª…ñ¥fgÛÏ³¸8S4kŸÿ,•1Õ²ãØc.3g<x›_4A3Ï¬µs½´6­Ù¹^Z›‰Öì   ¨AkgÖì\/­ÍD+vë—¸âû¶Ø}Ü½:ÿ!‡¨pÕiX±™*z¦Jı©f'b©~‰3¯ó&†ù×ç?ä½ãŞ•ÍÎøÿe4£š©RªÙaêØğh\çM´ùaşÃ.Ès˜^`î½áTêŠˆjz¦Jı©f'ÉBıRÊ›hò'R»‚ü‡qÃÌ6~üç:µò¸ çH[ké™jõ§–4õKI(o¢—?±‹óÆyó
+š5o¤Eª¡œ™¨¤gª×Ÿ:v’,–™¤ ¼‰&"UxVœç0é™”R.hÿ´Rîm¹Jz¦Zı©6n)[ËäM¤O·enşÃ8ÏaòŒ½b„TĞåê^I=S­şT7Ÿåú¥$´6™,wš0ÿaœç0qÊ^óÛ.ß\=S­şT7ŸÅú%Î³Âü‡qÃLDùU¿ÏË‰Jz¦Zı©e§:²ÄµòÌºU;'uóvÊåÅƒgİ¼   5híìÑšë¥µ™hÅx³Â«Ë’ÅSnÌ…pòøY
+õjM4¥Ìq¬¤«ÖŸ$k´œ.KyÙÏ	ØæY'Ÿå•Yõv'k«ÆµªĞÎrş¤sº,Û_eóäé‡Üı¡Ï9(N?Ë³•|Í¶àì‘15ãZÕèOšô„Í”atY¦®H¥›IïûÑ¿r“ÓÇÏ²®:KåcÍ¸V5ú“bXu>åtYÔíX¥<‹¶Ë3s01O?‹àZ5?4c+ÆµªÒ®’|'§Ë¢nÇz,åY´=[WzúøYfÿUo¤9ãX/®Uş¤YñR›ÓeÑ™'Öc9k– Ó³*ÄÏÒ°çÎù™È–ëÔˆkU±?9±z	V=3è{ÃH¥:2=«Bü,ªÎw
+—×ª^ÂÒë[°%ï	=–~€C‚­Ü³á©ãgY;«~E•=µt`µúÓ"­<³nÕÎõÒÚL´fg‘.«"­ÍDkv   Ô µ³GkvÎÉ¶'r­ÍD;v²â$±º¬aÃü"ÏªJŠ2VØáË¥áõO“v&ôVçµ“ /N«ËÚ¢¹XâYµâ@ñµÍxV~ï™÷.ÅßçÕ²È‹/Åè²:íY”ÇĞÄÉ"–hßÿÑCèaÙ±Q+TEÏbú4¯
+Ê‘ˆÔ´ã“'‰ÓeuäY:¡‰›¥uX¤	5ÚPÒié<ˆsv«ÅªèYŒşi¶¦ìc•ìdÆIâtYy–Î¯CÑH‡E9Ã”wíŒN‹ò ÎÙ­ªg—Ğùë¬¬ËVÿ47ã™KI-;!¹q’8]VÇzÖŞØ‘¯§Ÿ?½
+/#Ö„j×£j¨´TpÁuI¦¡uúôüè¯µìøF3ã$qº¬.åYR;ªzeÖ,]–œ„ò ÎÙ­?k•Ö3_“·B¿êwµì,4œ†WÏ$<k°jÊs(|ó³ˆk·]Á×‹µ*'=_®°ü¥¤–˜"¥ŸgYÏÒ·è2PÇÓıÔjÊƒ8G¥8Pº¤¢z¦µv&¾œÕN=*Ä !Úyfİ¦ÂÀ³`g¬.;   *ÒÚÙ£5;×Kk3ÑŠ\]Q„’?Éç&îs£Òùù8Xóñ³²~ÌÚ\ŞAnÿYõÑÆnöÜş'¡¥÷‚î³Şâùù8X3O0yíh.ï »ÿ©Ÿ”nõ¬Ñ¥úƒ~ÊàÈ.Šç7ìØ8X3¿‘fãn¥i.ï »ÿ¬Fd#[=kœµ£ô˜÷«t~CÁ*m$w+m£µ¼ƒüşÓG$ß¾¥dëŠÂò{)A0ï	5¥óÊÚV]/°q·’4—wßf­gÛ—Ã†Ô™JÓpĞgC[Oéü†]Ç†+š™	6îV’ÖòNì?³f±íËaƒoÒo<Œ‹ª,œßw¬™ß ğq·’´–wpbÿùëÓÍµ%N’t©s÷×¬âùù8X3#tÈ;rÌ;¸fÍšhßB¶ÆI’·¤ÇrR8¿áD¬¹»ç¼+Ñó®ò,¾}r…İ¼Ïºy;e@~CØ  pZ;{´fçzim&š±³V‡Ãè²N•ß°V\«ÖâtU·ˆÕ:œ´.ëTù«Åˆi-NWÍ¨M>k'œÑe*¿aµj-N×Ù<kµ‡Ñe.¿aj.N×ù<k­‡Ñe,¿a¥¸VÍÅéª,d­‡Óe,¿¡ B\«6ãtU²ã±V‡Ãé²N•ßPR!®U›qº*ÙñY©ÃátY§Êo¨êª×
+qºVÛ‰Š¯:Ÿ²º¬å7¬×
+qºÖÙi’fY7jçzim&Z³³ä7„   ç¤µ³GkvÎ	ò6h'?£Ëj%¿a-;|\¯i;|±4çÓg	²òØ1º¬VòV²3×kæÍ7G,ÍùôY]ækCF—Õµ’ß°’‰¸^Şº\ ®-]IÎ’Åè²ºFòÖÓg±q½fç4+×Ò9=+OéÀè²ºFòVÓgñq½fç4KÜr6}VÇí8]V×H~Ãjú,>®×œg±áx[çĞgåæ±ãtY]#ùkÙ™ˆë5w=—¯-?>+SœÅê²ZÉoXÉÎD\¯i;|1–3é³2Æê²ÉoXÍ×kÒÎD±$íé³+vN<v6ü†°            ·‹xó)^`âŸ%>            TDÿÊëBx|G¡ÂaçíÌ£B¶ô{Î³â8ñ³Ğ×)Š?¥â^‡çOkòcØ¸bCØùw);Ôî8Ùİ½x™RÌ[‹ì–ëÏVT#ø¦ˆß>û¿±-åYS¿÷[fı‹\1Bß'ƒ­@ÆÊ‘œ~è¿‹ÙqIìÆ1;¾ÿ'yV;ôKÔ/v†‚ıÙŒö¬ƒ8Ä?M¼,ùA¾ÉŒò®=‹ê‘‰âOiÇÁŸJ­é"¼ƒŠ™cã/ĞßÅì8œNâî_¯Gı"¸Œ	ÏvKÛ6{ÑF9,½ò,?ÿ—ğ,» ßéxA~ÃÆŸrâ^K­é½x4ºsçï"vÜx]Á€¢>”éÏ„gQ¸ K8Š¿üşåí FX{ÖÎl ¯³vfç8¿áZL\'?ş”{µ"ñYÚëw"Òm´—±ãÄë
++ÔU¨?4nq\,m Ø¸mdá¿~šò¬ƒZšä%b"¿áÄÄŸ²q¯†ó,y.?Š¶:÷Löï2vœx]aíYÅúcãaùq±(‰[9;›xüæ»£Œ…Ë{–¸8•×[©ü†[Ç<Œ?eâ^ßüíc^\GWL^`;vÌß…ìØx]Q3åYÅúÓ9çWWÂ§í–´³‰Çï~}}şøÛ¤g‰cC´ûù%‘ßpÃs0qofãO=¿ÈqÒq¯ÆIz.3BÔ^SÕµ3Èˆšeì˜x]´di;öÜ^¨?6–ú$;ÊnI;ÛŞ"®Úåõ”—ÇP!=Kàãûşû/q~Ã•eâ:™øSz„tÜ«A>²Ùx¶í:û4@7Û³³ïÊÙ¡x]æéy°Š“UÊ›‹¥í˜§5…ú                             pCü?s­‘
+endstream
+endobj
+15 0 obj
+<<
+/Length 168 >>
+stream
+     +l¥À‰L À¥l+  +l¥ÀÀÀÀ‰L +l¥ÀÀ¥l+ÀÀ¥l+ L‰À  L‰ÀÀ¥À‰L  ‰L+ L‰‰LL¥À¥ÀÀ‰À‰ll++‰À¥‰À‰L‰¥lLl¥¥lL+l+L‰l¥¥¥lL+l‰L +l‰‰‰‰l+ +‰l+l+L‰‰¥¥‰‰¥¥‰¥¥¥l‰¥‰lL+ L‰¥‰++l¥‰LLL‰ll‰l¥‰‰‰‰
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000074 00000 n 
+0000000120 00000 n 
+0000000340 00000 n 
+0000000377 00000 n 
+0000000491 00000 n 
+0000000554 00000 n 
+0000005818 00000 n 
+0000005926 00000 n 
+0000006035 00000 n 
+0000006141 00000 n 
+0000006206 00000 n 
+0000008940 00000 n 
+0000010105 00000 n 
+0000018418 00000 n 
+trailer
+<<
+/Size 16
+/Root 1 0 R
+/Info 5 0 R
+>>
+startxref
+18638
+%%EOF

@@ -69,8 +69,6 @@ def custom_score_2(game, player):
     moves_player = len(game.get_legal_moves(player))
     moves_rival = len(game.get_legal_moves(game.get_opponent(player)))
     return float(-(moves_rival)**2)
-
-
 def custom_score_3(game, player):
     """Calculate the heuristic value of a game state from the point of view
     of the given player.
@@ -110,13 +108,12 @@ def custom_score_3(game, player):
 
 ![tournment](t.PNG)
 
-
 The win rate from the tournament results are:
 AB custom > AB custom2> AB improved > AB custom3
 
 I choose AB custom because:
->It has got the highest winning rate of 70%
 
+>It has got the highest winning rate of 70%
 >The winning factor for AB custom is dependent on increase of ones moves and decrease of the rivasl moves, by 2 fold helped to get 70% of win rate.
 
 
