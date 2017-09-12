@@ -34,8 +34,8 @@ endobj
 5 0 obj
 <<
 /Creator (DOMPDF)
-/CreationDate (D:20170912155812+00'00')
-/ModDate (D:20170912155812+00'00')
+/CreationDate (D:20170912175306+00'00')
+/ModDate (D:20170912175306+00'00')
 >>
 endobj
 6 0 obj
@@ -46,7 +46,7 @@ endobj
 endobj
 7 0 obj
 <<
-/Length 5212 >>
+/Length 5407 >>
 stream
 
 0.000 0.000 0.000 rg
@@ -58,57 +58,57 @@ BT 34.016 699.891 Td /F3 12.0 Tf  [(    This should be the best heuristic functi
 BT 34.016 687.441 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
 BT 34.016 674.991 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
 BT 34.016 662.541 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
-BT 34.016 650.090 Td /F3 12.0 Tf  [(    ----------)] TJ ET
-BT 34.016 637.640 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
-BT 34.016 625.190 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
-BT 34.016 612.740 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
-BT 34.016 600.289 Td /F3 12.0 Tf  [(    player : object)] TJ ET
-BT 34.016 587.839 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
-BT 34.016 575.389 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
-BT 34.016 562.939 Td /F3 12.0 Tf  [(    Returns)] TJ ET
-BT 34.016 550.488 Td /F3 12.0 Tf  [(    -------)] TJ ET
-BT 34.016 538.038 Td /F3 12.0 Tf  [(    float)] TJ ET
-BT 34.016 525.588 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
-BT 34.016 513.138 Td /F3 12.0 Tf  [(    """)] TJ ET
-BT 34.016 500.687 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
-BT 34.016 488.237 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
-BT 34.016 475.787 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
-BT 34.016 463.337 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
-BT 34.016 450.887 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
-BT 34.016 438.436 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
-BT 34.016 425.986 Td /F3 12.0 Tf  [(    return float\(moves_player/2-2*moves_rival\))] TJ ET
-BT 34.016 413.536 Td /F3 12.0 Tf  [(def custom_score_2\(game, player\):)] TJ ET
-BT 34.016 401.086 Td /F3 12.0 Tf  [(    """Calculate the heuristic value of a game state from the point of view)] TJ ET
-BT 34.016 388.635 Td /F3 12.0 Tf  [(    of the given player.)] TJ ET
-BT 34.016 376.185 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
-BT 34.016 363.735 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
-BT 34.016 351.285 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
-BT 34.016 338.834 Td /F3 12.0 Tf  [(    ----------)] TJ ET
-BT 34.016 326.384 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
-BT 34.016 313.934 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
-BT 34.016 301.484 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
-BT 34.016 289.033 Td /F3 12.0 Tf  [(    player : object)] TJ ET
-BT 34.016 276.583 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
-BT 34.016 264.133 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
-BT 34.016 251.683 Td /F3 12.0 Tf  [(    Returns)] TJ ET
-BT 34.016 239.232 Td /F3 12.0 Tf  [(    -------)] TJ ET
-BT 34.016 226.782 Td /F3 12.0 Tf  [(    float)] TJ ET
-BT 34.016 214.332 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
-BT 34.016 201.882 Td /F3 12.0 Tf  [(    """)] TJ ET
-BT 34.016 189.431 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
-BT 34.016 176.981 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
-BT 34.016 164.531 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
-BT 34.016 152.081 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
-BT 34.016 139.631 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
-BT 34.016 127.180 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
-BT 34.016 114.730 Td /F3 12.0 Tf  [(    return float\(-\(moves_rival\)**2\))] TJ ET
-BT 34.016 102.280 Td /F3 12.0 Tf  [(def custom_score_3\(game, player\):)] TJ ET
-BT 34.016 89.830 Td /F3 12.0 Tf  [(    """Calculate the heuristic value of a game state from the point of view)] TJ ET
-BT 34.016 77.379 Td /F3 12.0 Tf  [(    of the given player.)] TJ ET
-BT 34.016 64.929 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
-BT 34.016 52.479 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
-BT 34.016 40.029 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
-BT 34.016 27.578 Td /F3 12.0 Tf  [(    ----------)] TJ ET
+BT 34.016 650.090 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
+BT 34.016 637.640 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
+BT 34.016 625.190 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
+BT 34.016 612.740 Td /F3 12.0 Tf  [(    player : object)] TJ ET
+BT 34.016 600.289 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
+BT 34.016 587.839 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
+BT 34.016 575.389 Td /F3 12.0 Tf  [(    Returns)] TJ ET
+BT 34.016 562.939 Td /F3 12.0 Tf  [(    float)] TJ ET
+BT 34.016 550.488 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
+BT 34.016 538.038 Td /F3 12.0 Tf  [(    """)] TJ ET
+BT 34.016 525.588 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
+BT 34.016 513.138 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
+BT 34.016 500.687 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
+BT 34.016 488.237 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
+BT 34.016 475.787 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
+BT 34.016 463.337 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
+BT 34.016 450.887 Td /F3 12.0 Tf  [(    return float\(moves_player/2-2*moves_rival\))] TJ ET
+BT 34.016 438.436 Td /F3 12.0 Tf  [(def custom_score_2\(game, player\):)] TJ ET
+BT 34.016 425.986 Td /F3 12.0 Tf  [(    """Calculate the heuristic value of a game state from the point of view)] TJ ET
+BT 34.016 413.536 Td /F3 12.0 Tf  [(    of the given player.)] TJ ET
+BT 34.016 401.086 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
+BT 34.016 388.635 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
+BT 34.016 376.185 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
+BT 34.016 363.735 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
+BT 34.016 351.285 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
+BT 34.016 338.834 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
+BT 34.016 326.384 Td /F3 12.0 Tf  [(    player : object)] TJ ET
+BT 34.016 313.934 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
+BT 34.016 301.484 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
+BT 34.016 289.033 Td /F3 12.0 Tf  [(    Returns)] TJ ET
+BT 34.016 276.583 Td /F3 12.0 Tf  [(    float)] TJ ET
+BT 34.016 264.133 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
+BT 34.016 251.683 Td /F3 12.0 Tf  [(    """)] TJ ET
+BT 34.016 239.232 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
+BT 34.016 226.782 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
+BT 34.016 214.332 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
+BT 34.016 201.882 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
+BT 34.016 189.431 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
+BT 34.016 176.981 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
+BT 34.016 164.531 Td /F3 12.0 Tf  [(    return float\(-\(moves_rival\)**2\))] TJ ET
+BT 34.016 152.081 Td /F3 12.0 Tf  [(def custom_score_3\(game, player\):)] TJ ET
+BT 34.016 139.631 Td /F3 12.0 Tf  [(    """Calculate the heuristic value of a game state from the point of view)] TJ ET
+BT 34.016 127.180 Td /F3 12.0 Tf  [(    of the given player.)] TJ ET
+BT 34.016 114.730 Td /F3 12.0 Tf  [(    Note: this function should be called from within a Player instance as)] TJ ET
+BT 34.016 102.280 Td /F3 12.0 Tf  [(    `self.score\(\)` -- you should not need to call this function directly.)] TJ ET
+BT 34.016 89.830 Td /F3 12.0 Tf  [(    Parameters)] TJ ET
+BT 34.016 77.379 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
+BT 34.016 64.929 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
+BT 34.016 52.479 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
+BT 34.016 40.029 Td /F3 12.0 Tf  [(    player : object)] TJ ET
+BT 34.016 27.578 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
 endstream
 endobj
 8 0 obj
@@ -143,40 +143,36 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 2681 >>
+/Length 2372 >>
 stream
 
 0.000 0.000 0.000 rg
-BT 34.016 797.914 Td /F3 12.0 Tf  [(    game : `isolation.Board`)] TJ ET
-BT 34.016 785.464 Td /F3 12.0 Tf  [(        An instance of `isolation.Board` encoding the current state of the)] TJ ET
-BT 34.016 773.014 Td /F3 12.0 Tf  [(        game \(e.g., player locations and blocked cells\).)] TJ ET
-BT 34.016 760.563 Td /F3 12.0 Tf  [(    player : object)] TJ ET
-BT 34.016 748.113 Td /F3 12.0 Tf  [(        A player instance in the current game \(i.e., an object corresponding to)] TJ ET
-BT 34.016 735.663 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
-BT 34.016 723.213 Td /F3 12.0 Tf  [(    Returns)] TJ ET
-BT 34.016 710.762 Td /F3 12.0 Tf  [(    -------)] TJ ET
-BT 34.016 698.312 Td /F3 12.0 Tf  [(    float)] TJ ET
-BT 34.016 685.862 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
-BT 34.016 673.412 Td /F3 12.0 Tf  [(    """)] TJ ET
-BT 34.016 660.961 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
-BT 34.016 648.511 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
-BT 34.016 636.061 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
-BT 34.016 623.611 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
-BT 34.016 611.160 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
-BT 34.016 598.710 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
-BT 34.016 586.260 Td /F3 12.0 Tf  [(    return float\(moves_player-2*moves_rival\))] TJ ET
-BT 64.016 548.365 Td /F2 12.0 Tf  [(custom score and custom score3 are similar to improved score. Where custom score3 is trying to )] TJ ET
-BT 64.016 534.109 Td /F2 12.0 Tf  [(increase moves of given player and reduce 2 fold moves of rival , but in custom score we are )] TJ ET
-BT 64.016 519.853 Td /F2 12.0 Tf  [(increasing moves of given player by 2 fold and reduce rivals moves by 2 fold.)] TJ ET
-BT 64.016 493.597 Td /F2 12.0 Tf  [(In custom score2 we are trying to decrease rivals moves exponentially)] TJ ET
+BT 34.016 797.914 Td /F3 12.0 Tf  [(        one of the player objects `game.__player_1__` or `game.__player_2__`.\))] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(    Returns)] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(    float)] TJ ET
+BT 34.016 760.563 Td /F3 12.0 Tf  [(        The heuristic value of the current game state to the specified player.)] TJ ET
+BT 34.016 748.113 Td /F3 12.0 Tf  [(    """)] TJ ET
+BT 34.016 735.663 Td /F3 12.0 Tf  [(    if game.is_loser\(player\):)] TJ ET
+BT 34.016 723.213 Td /F3 12.0 Tf  [(        return float\("-inf"\))] TJ ET
+BT 34.016 710.762 Td /F3 12.0 Tf  [(    if game.is_winner\(player\):)] TJ ET
+BT 34.016 698.312 Td /F3 12.0 Tf  [(        return float\("inf"\))] TJ ET
+BT 34.016 685.862 Td /F3 12.0 Tf  [(    moves_player = len\(game.get_legal_moves\(player\)\))] TJ ET
+BT 34.016 673.412 Td /F3 12.0 Tf  [(    moves_rival = len\(game.get_legal_moves\(game.get_opponent\(player\)\)\))] TJ ET
+BT 34.016 660.961 Td /F3 12.0 Tf  [(    return float\(moves_player-2*moves_rival\))] TJ ET
+BT 64.016 623.067 Td /F2 12.0 Tf  [(custom score and custom score3 are similar to improved score. Where custom score3 is trying to )] TJ ET
+BT 64.016 608.811 Td /F2 12.0 Tf  [(increase moves of given player and reduce 2 fold moves of rival , but in custom score we are )] TJ ET
+BT 64.016 594.555 Td /F2 12.0 Tf  [(increasing moves of given player by 2 fold and reduce rivals moves by 2 fold. In custom score2 )] TJ ET
+BT 64.016 580.299 Td /F2 12.0 Tf  [(we are trying to decrease rivals moves exponentially)] TJ ET
 q
-450.750 0 0 267.750 34.016 198.996 cm /I2 Do
+450.750 0 0 267.750 34.016 285.697 cm /I2 Do
 Q
-BT 34.016 175.591 Td /F2 12.0 Tf  [(The win rate from the tournament results are: AB custom > AB custom2> AB improved > AB custom3)] TJ ET
-BT 34.016 149.335 Td /F2 12.0 Tf  [(I choose AB custom because:)] TJ ET
-BT 64.016 111.079 Td /F2 12.0 Tf  [(It has got the highest winning rate of 70% The winning factor for AB custom is dependent on )] TJ ET
-BT 64.016 96.823 Td /F2 12.0 Tf  [(increase of ones moves and decrease of the rivasl moves, by 2 fold helped to get 70% of win )] TJ ET
-BT 64.016 82.567 Td /F2 12.0 Tf  [(rate.)] TJ ET
+BT 34.016 262.293 Td /F2 12.0 Tf  [(The win rate from the tournament results are: AB custom > AB custom2> AB improved > AB custom3)] TJ ET
+BT 34.016 236.037 Td /F2 12.0 Tf  [(I choose AB custom because:)] TJ ET
+BT 64.016 197.781 Td /F2 12.0 Tf  [(1 It has got the highest winning rate of 70%)] TJ ET
+BT 64.016 171.525 Td /F2 12.0 Tf  [(2 The winning factor for AB custom is dependent on increase of ones moves and decrease of the )] TJ ET
+BT 64.016 157.269 Td /F2 12.0 Tf  [(rivasl moves, by 2 fold helped to get 70% of win rate.)] TJ ET
+BT 64.016 131.013 Td /F2 12.0 Tf  [(3 depth, because moves of rival is considered, its actual depth is one layer deeper than )] TJ ET
+BT 64.016 116.757 Td /F2 12.0 Tf  [(open_score if given the same depth limitation.)] TJ ET
 endstream
 endobj
 13 0 obj
@@ -245,14 +241,14 @@ xref
 0000000377 00000 n 
 0000000491 00000 n 
 0000000554 00000 n 
-0000005818 00000 n 
-0000005926 00000 n 
-0000006035 00000 n 
-0000006141 00000 n 
-0000006206 00000 n 
-0000008940 00000 n 
-0000010105 00000 n 
-0000018418 00000 n 
+0000006013 00000 n 
+0000006121 00000 n 
+0000006230 00000 n 
+0000006336 00000 n 
+0000006401 00000 n 
+0000008826 00000 n 
+0000009991 00000 n 
+0000018304 00000 n 
 trailer
 <<
 /Size 16
@@ -260,5 +256,5 @@ trailer
 /Info 5 0 R
 >>
 startxref
-18638
+18524
 %%EOF
