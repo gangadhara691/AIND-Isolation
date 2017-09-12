@@ -1,0 +1,10 @@
+{
+    "critiques": {
+        "680": {
+            "rubric_items": {
+                "result": "failed",
+                "observation": "********** No Output **********\nYour code caused the tests to abort without producing any output.  Common causes of this failure include syntax errors that cause the test to fail when your code is imported, attempting to import modules that only exist in your local repository (the sandbox is only guaranteed to have access to the files explicitly listed by the submit script), and including non-ASCII characters in code or comments (which may cause third-party libraries to fail when your code is imported by the tests)."
+            }
+        }
+    }
+}
